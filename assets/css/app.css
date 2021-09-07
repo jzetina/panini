@@ -374,9 +374,9 @@ body {
 }
 
 .menu-opciones {
-    width: 35% !important;
+    width: 55% !important;
     height: auto;
-    margin: 0 100px;
+    margin: 0 35px;
 }
 
 .nav-link, .nav-tabs {
