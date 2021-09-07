@@ -4,14 +4,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <!-- Splide -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css">
     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-default.min.css">-->
     <link rel="stylesheet" href="assets/css/splide-sea-green.min.css">
+
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/app.css">
@@ -21,6 +24,7 @@
   <body>
 
     <main>
+        <!-- Hero -->
         <div id="hero">
             <!-- Navigation -->
             <header>
@@ -51,6 +55,12 @@
                             <li class="nav-item ps-4 ps-md-0 ms-0 ms-md-4">
                                 <a class="nav-link" href="#">Ubicaciones</a>
                             </li>
+                            <li class="nav-item ps-4 ps-md-0 ms-0 ms-md-4">
+                                <a class="nav-link" href=""><i class="bi bi-facebook"></i> Facebook</a>
+                            </li>
+                            <li class="nav-item ps-4 ps-md-0 ms-0 ms-md-4">
+                                <a class="nav-link" href=""><i class="bi bi-instagram"></i> Instagram</a>
+                            </li>
                             <!--<li class="nav-item dropdown ps-4 ps-md-0 ms-0 ms-md-4">
                                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Precios</a>
                                 <div class="dropdown-menu">
@@ -77,10 +87,10 @@
                 <img class="d-block mx-auto mb-4 img-fluid" id="logo-hero" src="assets/img/logo-panini.png">
                 <div class="col-lg-6 mx-auto">
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center" id="boton-delivery">
-                        <button type="button" class="btn btn-dark btn-lg px-4 gap-3" style="border-radius:30px;">Pide aquí</button>
+                        <button type="button" class="btn btn-dark btn-lg px-4 gap-3 col-sm-6 col-md-4 mx-auto" id="texto-delivery">PIDE AQUÍ</button>
                     </div>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                        <div id="iconos-delivery">
+                        <div id="iconos-delivery" class="mx-auto d-block">
                             <a href="#"><img class="img-fluid" src="assets/img/uber-eats.png" alt=""></a>
                             <a href="#"><img class="img-fluid" src="assets/img/didi-food.png" alt=""></a>
                             <a href="#"><img class="img-fluid" src="assets/img/rappi.png" alt=""></a>
@@ -210,27 +220,44 @@
                             <li class="splide__slide"><img src="assets/img/panini4.jpg" alt=""></li>
                             <li class="splide__slide"><img src="assets/img/panini5.jpg" alt=""></li>
                             <li class="splide__slide"><img src="assets/img/panini6.jpg" alt=""></li>
-                            <li class="splide__slide"><img src="assets/img/panini7.jpg" alt=""></li>
-                            <li class="splide__slide"><img src="assets/img/panini8.jpg" alt=""></li>
-                            <li class="splide__slide"><img src="assets/img/panini9.jpg" alt=""></li>
-                            <li class="splide__slide"><img src="assets/img/panini10.jpg" alt=""></li>
-                            <li class="splide__slide"><img src="assets/img/panini11.jpg" alt=""></li>
-                            <li class="splide__slide"><img src="assets/img/panini12.jpg" alt=""></li>
-                            <li class="splide__slide"><img src="assets/img/panini13.jpg" alt=""></li>
-                            <li class="splide__slide"><img src="assets/img/panini14.jpg" alt=""></li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ubicaciones -->
+        <div id="ubicaciones">
+            <div class="container-fluid">
+                <h2 class="text-center ubicaciones-title">Ubicaciones</h2>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div id="mapa-vhsa"></div>
+                        <img src="assets/img/vhsa.png" class="img-fluid mx-auto d-block loc-img" alt="">
+                        <p class="loc-text text-center">Av. Árboles 101, Plaza Cascadas<br>Col. Heribero Kehoe.<br>(993) 123 4567</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div id="mapa-cancun"></div>
+                        <img src="assets/img/cancun.png" class="img-fluid mx-auto d-block loc-img" alt="">
+                        <p class="loc-text text-center">Av. Árboles 101, Plaza Cascadas<br>Col. Heribero Kehoe.<br>(993) 123 4567</p>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
+    <footer>
+        <div id="footer-container">
+            <p class="text-center footer-text align-middle">Derechos Reservados 2021</p>
+        </div>
+    </footer>
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0_Yjj7Lg2Qa-nYWYxwSql0FLDQvGdAeo&callback=initMap"></script>
     <script>
         document.addEventListener( 'DOMContentLoaded', function () {
             new Splide( '.splide', {
@@ -243,13 +270,41 @@
                 rewind   : true,
                 breakpoints: {
                     640: {
-                        perPage: 1,
-                        height   : '20rem',
+                        perPage   : 1,
+                        height    : '20rem',
+                        pagination: true,
+                        interval : 5000,
                     },
                 }
             } ).mount();
         } );
     </script>
+    <script>
+        function initMap() {
+            const paninivhsa = { lat: 18.0071092, lng: -92.9388611 };
+            const map = new google.maps.Map(document.getElementById("mapa-vhsa"), {
+                zoom: 17,
+                center: paninivhsa,
+                disableDefaultUI: true,
+                mapId: '8dd46764223a1b2f'
+            });
+            const marker = new google.maps.Marker({
+                position: paninivhsa,
+                map: map,
+            });
 
+            const paninicancun = { lat: 18.0071092, lng: -92.9388611 };
+            const map2 = new google.maps.Map(document.getElementById("mapa-cancun"), {
+                zoom: 17,
+                center: paninicancun,
+                disableDefaultUI: true,
+                mapId: '8dd46764223a1b2f'
+            });
+            const marker2 = new google.maps.Marker({
+                position: paninicancun,
+                map: map2,
+            });
+        }
+    </script>
   </body>
 </html>
