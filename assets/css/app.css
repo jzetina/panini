@@ -383,6 +383,28 @@ body {
     padding: 8px 0;
 }
 
+.modal-content {
+    border: 1px solid #EA9020;
+    background-color: #212121;
+}
+
+.modal-title {
+    color: #EA9020;
+    font-weight: bold;
+}
+
+.modal-header .btn-close {
+    background-color: #fff;
+}
+
+.modal-header {
+    border-bottom: 1px solid #EA9020;
+}
+
+.modal-footer {
+    border-top: 1px solid #EA9020;
+}
+
 /* * Menú
 * ================================================= */
 

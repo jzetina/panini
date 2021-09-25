@@ -77,14 +77,36 @@
                 <img class="d-block mx-auto mb-4 img-fluid" id="logo-hero" src="assets/img/logo-panini.png">
                 <div class="col-lg-6 mx-auto">
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center" id="boton-delivery">
-                        <button type="button" class="btn btn-dark btn-lg px-4 gap-3 col-sm-6 col-md-4 mx-auto" id="texto-delivery"><a href="https://api.whatsapp.com/send?phone=529932203790&text=Hola!%20Quiero%20hacer%20un%20pedido!" target="_blank">PIDE AQUÍ</a></button>
+                        <button type="button" class="btn btn-dark btn-lg px-4 gap-3 col-sm-6 col-md-4 mx-auto" id="texto-delivery" data-bs-toggle="modal" data-bs-target="#whatsappModal">PIDE AQUÍ</button>
                     </div>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                         <div id="iconos-delivery" class="mx-auto d-block">
-                            <a href="https://www.ubereats.com/mx" target="_blank"><img class="img-fluid" src="assets/img/uber-eats.png" alt=""></a>
-                            <a href="https://www.didi-food.com/es-MX" target="_blank"><img class="img-fluid" src="assets/img/didi-food.png" alt=""></a>
-                            <a href="https://www.rappi.com.mx/" target="_blank"><img class="img-fluid" src="assets/img/rappi.png" alt=""></a>
-                            <a href="https://api.whatsapp.com/send?phone=529932203790&text=Hola!%20Quiero%20hacer%20un%20pedido!" target="_blank"><img class="img-fluid" src="assets/img/whatsapp.png" alt=""></a>
+                            <a href="#"><img class="img-fluid" src="assets/img/uber-eats.png" alt="Logo Uber Eats"></a>
+                            <a href="#"><img class="img-fluid" src="assets/img/didi-food.png" alt="Logo Didi"></a>
+                            <a href="#"><img class="img-fluid" src="assets/img/rappi.png" alt="Logo Rappi"></a>
+                            <a href="#"><img class="img-fluid" src="assets/img/whatsapp.png" alt="Logo WhatsApp"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="whatsappModal" tabindex="-1" aria-labelledby="whatsappModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="whatsappModalLabel">Elige Tu Ciudad</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 mx-auto d-block">
+                                    <a href="https://api.whatsapp.com/send?phone=529932203790&text=Hola!%20Quiero%20hacer%20un%20pedido!" target="_blank"><img src="assets/img/vhsa-wa.png" class="img-fluid"></a>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <a href="https://api.whatsapp.com/send?phone=529982925008&text=Hola!%20Quiero%20hacer%20un%20pedido!" target="_blank"><img src="assets/img/tulum-wa.png" class="img-fluid"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -242,8 +264,9 @@
                     </div>
                     <div class="col-sm-12 col-md-6">
                         <div id="mapa-cancun"></div>
-                        <img src="assets/img/tulum.png" class="img-fluid mx-auto d-block loc-img" alt=""><br>
-                        <p class="loc-text text-center">Tulumunchies, QROO 15 60<br>Tulum Beach<br><a href="https://api.whatsapp.com/send?phone=529932203790&text=Hola!%20Quiero%20hacer%20un%20pedido!">(993) 220 3790</a></p>
+                        <img src="assets/img/tulum.png" class="img-fluid mx-auto d-block loc-img" alt="">
+                        <p class="loc-text text-center" style="margin-bottom:10px;"><a href="https://api.whatsapp.com/send?phone=529982925008&text=Hola!%20Quiero%20hacer%20un%20pedido!">(998) 292 5008</a></p>
+                        <p class="loc-text text-center"><span style="font-weight:bold;">Tulumunchies</span><br>QROO 15 60<br>Tulum Beach</p>
                     </div>
                 </div>
             </div>
