@@ -230,7 +230,7 @@ body {
 	display: inline-block;
 	padding: 5px 0 !important;
 	position: relative;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bolder;
 }
 
@@ -343,6 +343,11 @@ body {
 	color: #212121 !important;
 }
 
+.branch {
+    width: 70% !important;
+    height: auto !important;
+}
+
 /* * Hero
 * ================================================= */
 
@@ -358,8 +363,9 @@ body {
 }
 
 #logo-hero {
-    width: 40%;
+    width: 30%;
     height: auto;
+    margin-top: 100px;
 }
 
 #boton-delivery {
@@ -488,7 +494,7 @@ small {
 }
 
 #mapa-vhsa, #mapa-cancun {
-    height: 400px;
+    height: 500px;
     width: 100%;
     margin-bottom: 40px;
 }
@@ -598,6 +604,8 @@ Extra small devices (portrait phones, less than 576px)
         margin-top: 0px;
         position: absolute;
         bottom: 35px;
+        left: 0 !important;
+        right: 0 !important;
     }
 
     #iconos-delivery a img {
